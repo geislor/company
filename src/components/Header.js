@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = props => {
   return (
@@ -16,32 +17,51 @@ const Header = props => {
               <span className="icon-bar" />
               <span className="icon-bar" />
             </button>
-            <a className="navbar-brand" href="#myPage">
+            <Link className="navbar-brand" to="/">
               Logo
-            </a>
+            </Link>
           </div>
           <div className="collapse navbar-collapse" id="myNavbar">
             <ul className="nav navbar-nav navbar-right">
               <li>
-                <a href="#about">ABOUT</a>
+                <Link to="/">ABOUT</Link>
               </li>
               <li>
-                <a href="#services">SERVICES</a>
+                <Link to="/services">SERVICES</Link>
               </li>
               <li>
-                <a href="#portfolio">PORTFOLIO</a>
+              <Link to="/portfolio">PORTFOLIO</Link>
               </li>
               <li>
-                <a href="#pricing">PRICING</a>
+              <Link to="/pricing">PRICING</Link>
               </li>
               <li>
-                <a href="#contact">CONTACT</a>
+              <Link to="/contact">CONTACT</Link>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      
+      <div className="jumbotron text-center">
+        <h1>Company</h1>
+        <p>We specialize in blablabla</p>
+        <form>
+          <div className="input-group">
+            <input
+              type="email"
+              className="form-control"
+              size="50"
+              placeholder="Email Address"
+              required
+            />
+            <div className="input-group-btn">
+              <button type="button" className="btn btn-danger">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
