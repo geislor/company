@@ -159,7 +159,7 @@ const Site = props => {
           </div>
           <div className="col-sm-4">
             <span className="glyphicon glyphicon-wrench logo-small" />
-            <h4 style="color:#303030;">HARD WORK</h4>
+            <h4>HARD WORK</h4>
             <p>Lorem ipsum dolor sit amet..</p>
           </div>
         </div>
@@ -430,7 +430,6 @@ const Site = props => {
       <img
         src="/w3images/map.jpg"
         className="w3-image w3-greyscale-min"
-        style="width:100%"
       />
       <footer className="container-fluid text-center">
         <a href="#myPage" title="To Top">
