@@ -5,7 +5,7 @@ const ItemPortfolio = props => {
         <div className="col-sm-4">
             <div className="thumbnail">
               <img
-                src="sanfran.jpg"
+                src={props.content.image}
                 alt="San Francisco"
                 width="400"
                 height="300"

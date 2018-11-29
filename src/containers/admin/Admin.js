@@ -10,10 +10,14 @@ class Admin extends Component {
 
     render(){
         return (
-            <div>
-                <h2>painel administrativo</h2>
-                <Route path={`/`} component={AdminMenu} />
-                <Route path={`${this.props.match.url}/portfolio`} component={AdminPortfolio} />
+            <div className="card">
+                <div className="card-header">
+                    <h2>painel administrativo</h2>
+                </div>
+                <div className="card-body">
+                    <Route path={`/`} component={AdminMenu} />
+                    <Route path={`${this.props.match.url}/portfolio`} component={AdminPortfolio} />
+                </div>
             </div>
         );
     }
