@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Abount from "./components/About";
 import Services from "./components/Services";
-import Portfolio from "./components/Portfolio";
+import Portfolio from "./containers/Portfolio";
 import Pricing from "./components/Pricing";
 import Contact from "./components/Contact";
 import Admin from "./containers/admin/Admin";

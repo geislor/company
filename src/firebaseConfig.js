@@ -10,6 +10,8 @@ var firebaseConfig = {
     messagingSenderId: process.env.MESSAGING_SENDER_ID,
 };
 
+console.log('CONFIG FIREBASE',firebaseConfig)
+
 const app = Firebase.initializeApp(firebaseConfig);
 const config = Rebase.createClass(app.database());
 
