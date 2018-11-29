@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import config from "../firebaseConfig";
+import ItemPortfolio from "../components/ItemPortfolio";
 
 class Portfolio extends Component {
   constructor(props){
@@ -22,20 +23,13 @@ class Portfolio extends Component {
         <br />
         <h4>What we have created</h4>
         <div className="row text-center ">
-          <div className="col-sm-4">
-            <div className="thumbnail">
-              <img
-                src="sanfran.jpg"
-                alt="San Francisco"
-                width="400"
-                height="300"
-              />
-              <p>
-                <strong>{this.state.portfolio.title}</strong>
-              </p>
-              <p>{this.state.portfolio.description}</p>
-            </div>
-          </div>
+          { 
+            Object.keys(this.state.portfolio).map(key => {
+              return(
+                <ItemPortfolio key={key} content={this.state.portfolio[key]}/>
+              )
+            })
+          }
         </div>
         <br />
 
