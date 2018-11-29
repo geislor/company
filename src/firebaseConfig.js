@@ -1,13 +1,15 @@
+import keys from './keys';
+
 const Rebase = require('re-base');
 const Firebase = require('firebase');
 
 var firebaseConfig = {
-    apiKey: process.env.API_KEY,
-    authDomain: process.env.AUTH_DOMAIN,
-    databaseURL: process.env.DATABASE_URL,
-    projectId: process.env.PROJECT_ID,
-    storageBucket: process.env.STORAGE_BUCKET,
-    messagingSenderId: process.env.MESSAGING_SENDER_ID,
+    apiKey: keys.apiKey,
+    authDomain: keys.authDomain,
+    databaseURL: keys.databaseURL,
+    projectId: keys.projectId,
+    storageBucket: keys.storageBucket,
+    messagingSenderId: keys.messagingSenderId,
 };
 
 console.log('CONFIG FIREBASE',firebaseConfig)

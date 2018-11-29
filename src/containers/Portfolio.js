@@ -6,12 +6,10 @@ class Portfolio extends Component {
     super(props);
     this.state = {
       portfolio: {
-        title: 'PARIS',
-        description: 'Cidade Luz'
       }
     }
 
-    config.synsState('portfolio',{
+    config.syncState('portfolio',{
       context: this,
       state: 'portfolio',
       asArray: false
